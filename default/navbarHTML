@@ -1,0 +1,6 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+      <img src="../assets/img/icono.PNG" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      PROGRAMACION WEB
+  </div>
+</nav>

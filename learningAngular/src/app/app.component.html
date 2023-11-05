@@ -1,0 +1,48 @@
+
+<div class="toolbar" *ngIf="isMenuVisible" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+  />
+  <span>Welcome</span>
+  <a routerLink="" style="color: white;">Home</a>
+  <a *ngIf="isadmin" routerLink="/user" style="color: white;">User</a>
+  <a routerLink="/customer" style="color: white;">Customer</a>
+    <div class="spacer"></div>
+    
+    <a routerLink="/login" style="color: white;">Logout</a>
+</div>
+
+<div class="content" style="width: 100%;display: block;" role="main">
+  <router-outlet></router-outlet>
+
+</div>
+
+
+
+<footer class="pie-pagina">
+  <div class="group-1">
+    <div class="box">
+      <figure>
+        <img src="../assets/img/yo.jpg">
+      </figure>
+    </div>
+    <div class="box">
+      <h2>SOBRE NOSOTROS</h2>
+      <p>Clase: Programacion WEB</p>
+      <p>Docente: Pedro Celestino Ramirez</p>
+      <p>INSTITUTO TECNOLÓGICO DE QUERÉTARO</p>
+    </div>
+    <div class="box">
+      <h2>SIGUENOS</h2>
+      <div class="red-social">
+        <a href="https://www.facebook.com/j.sanchez1001?mibextid=LQQJ4d" class="fa fa-facebook"></a>
+        <a href="https://instagram.com/el.pacha1001?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </div>
+  <div class="group-2">
+    <small>&copy;2023 <b>Juan Pablo Sanchez Perez</b>- Todos los derechos reservados</small>
+  </div>
+</footer>

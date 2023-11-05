@@ -1,0 +1,12 @@
+<div class="card mt-3">
+    <div class="card-body">
+        <div class="form-check form-check-inline" *ngFor="let sex of genero">
+            <input type="form-check-input"
+            type="radio"
+            name="sexo"
+            value="{{ sex }}"
+            (change)="radioChangeHandler($event)">
+            <label class="form-check-label" for="{{ sex }}">{{ sex }} ({{obtiene(sex)}})</label>
+    </div>
+    <p><b>{{radio}}</b></p>
+</div>

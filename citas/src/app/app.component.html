@@ -1,0 +1,14 @@
+<div class="container pt-3">
+  <div class="text-center tituloClass">citas medicas</div>
+  <div class="row mt-3">
+    <div class="col-lg-6">
+      <app-cear-citas (nuevaCita)="agregarCita($event)"></app-cear-citas>
+    </div>
+    <div class="col-lg-6">
+      <app-list-citas [listadoCitas]="listCitas" (deleteCita)="eliminarCitaListado($event)"></app-list-citas>
+    </div>
+  </div>
+</div>
+
+<img class="" src="../assets/img/ico.ico" width="50" height="50">
+<img class="" src="../assets/img/yo.jpg" width="100" height="100">

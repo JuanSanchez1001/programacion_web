@@ -1,0 +1,31 @@
+<div class="row g-3 align-items-center">
+    <div class="card-body text-center" >
+        <h5 class="card-title text-center">Sacar RFC</h5>
+        <div class="text-center">
+            <span class="badge text-bg-danger">TODOS LOS CAMPOS SON OBLIGATORIOS</span>
+        </div>
+        <div class="form-group mb-3">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" [(ngModel)]="nombre" class="form-control" 
+            placeholder="Ingrese nombre completo">
+        </div>
+        <div class="form-group mb-3">
+            <label for="apePaterno">Apellido paterno</label>
+            <input type="text" id="apePaterno" [(ngModel)]="apePaterno" class="form-control" 
+            placeholder="Ingrese Apellido paterno completo">
+        </div>
+        <div class="form-group mb-3">
+            <label for="apeMaterno">Apellino materno</label>
+            <input type="text" id="apeMaterno" [(ngModel)]="apeMaterno" class="form-control" 
+            placeholder="Ingrese Apellino matern completo">
+        </div>
+        <div class="form-group mb-3">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="text" id="fecha" [(ngModel)]="fecha" class="form-control" 
+            placeholder="Ingrese fecha de nacimiento">
+        </div>
+        <button style="width: 20%;" (click)="calcularRFC()" class="btn btn-primary btn-block">RFC</button>
+        
+    </div>
+    <label style="text-align: center;" for="calcRFC">{{ rfc }}</label>
+</div>
