@@ -1,5 +1,6 @@
 # programacion_web
-Aqui se guardan todos los proyectos hechos en la materia programación web
+# Framework usado Angular 15
+Aqui se guardan todos los proyectos hechos en la materia programación web.
 
 **Links de proyectos hosteados**
 <ol>
